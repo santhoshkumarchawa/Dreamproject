@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+<style>
+h1{
+color : Black ;
+background-color : Orange 
+}
+</style>
+<h1>
+Let's Go.com
+</h1>
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -14,12 +24,12 @@ body {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .topnav a:hover {
@@ -28,24 +38,63 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: Orange;
+  color: Black;
 }
 </style>
 </head>
 <body>
 
+
+
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="#home">Login / SignUp</a>
+  <a class>Guest</a>
+  <a href="#news">Contact Us</a>
+  <a href="#news">Careers</a> 
   <a href="#news">News</a>
-  <a href="#contact">Contact</a>
   <a href="#about">About</a>
+  <a href="#about">Home</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
+
+<div style="padding-right:16px">
+  <h2>Welcome to Let's Go</h2>  
 </div>
+
+<div>
+<form action="/action_page.php">
+  <label for="cars">Book a Ticket:</label>
+  <select name="Vehicle" id="Vehicle">
+    <option value="volvo">Bus</option>
+    <option value="Audi">Car</option>
+    <option value="JetAirways">Aeroplane</option>
+    <option value="Titanic">Ship</option>
+    <option value="Bullet">Train</option>
+  </select>
+  <br>
+</form>
+</div>
+<br>
+<div>
+<form action="/action_page.php">
+  <label for="cars">Enter Travelling time :</label>
+  <select name="time" id="time">
+    <option value="Morning">8:00  AM</option>
+    <option value="Morning">9:00  AM</option>
+    <option value="Morning">10:00 AM</option>
+    <option value="Morning">11:00 AM</option>
+    <option value="Morning">12:00 PM</option>
+    <option value="Morning">1:00  PM</option>
+    <option value="Morning">2:00  PM</option>
+    <option value="Morning">3:00  PM</option>
+  </select>
+  <br><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
 
 </body>
 </html>
